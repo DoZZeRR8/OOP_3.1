@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9ADC9D"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btColorRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF0000"
+        android:text="Red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.368" />
+
+    <Button
+        android:id="@+id/btColorGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="#00FF0A"
+        android:text="Green"
+        app:layout_constraintBottom_toBottomOf="@+id/btColorCyan"
+        app:layout_constraintEnd_toStartOf="@+id/btColorCyan"
+        app:layout_constraintTop_toTopOf="@+id/btColorCyan"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btColorBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:backgroundTint="#0027FF"
+        android:text="Blue"
+        app:layout_constraintBottom_toBottomOf="@+id/btColorRed"
+        app:layout_constraintStart_toEndOf="@+id/btColorRed"
+        app:layout_constraintTop_toTopOf="@+id/btColorRed"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btColorMagenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:backgroundTint="#DA62EF"
+        android:text="Magenta"
+        app:layout_constraintBottom_toBottomOf="@+id/btColorCyan"
+        app:layout_constraintStart_toEndOf="@+id/btColorCyan"
+        app:layout_constraintTop_toTopOf="@+id/btColorCyan"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btColorCyan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#35E7FD"
+        android:text="Cyan"
+        app:layout_constraintEnd_toEndOf="@+id/btColorRed"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btColorRed"
+        app:layout_constraintTop_toBottomOf="@+id/btColorRed" />
+
+    <Button
+        android:id="@+id/btColorLtGray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#ACA7A7"
+        android:text="Light-Gray"
+        app:layout_constraintEnd_toEndOf="@+id/btColorCyan"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/btColorCyan"
+        app:layout_constraintTop_toBottomOf="@+id/btColorCyan" />
+
+    <Button
+        android:id="@+id/btColorWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="White"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/btColorRed"
+        app:layout_constraintEnd_toStartOf="@+id/btColorRed"
+        app:layout_constraintTop_toTopOf="@+id/btColorRed"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="#36970E"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title='Flashlight'
+        app:titleTextColor="#FFFFFF" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
